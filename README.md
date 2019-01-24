@@ -15,7 +15,7 @@
 ## 下载
 
 * [五笔反查 APK](https://fir.im/wubi)
-* ![二维码](download.png)
+![二维码](download.png)
 
 ## 感谢
 
