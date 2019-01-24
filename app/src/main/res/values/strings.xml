@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">五笔反查</string>
+    <string name="tips_input_text">请输入要查询的汉字</string>
+    <string name="search">查询</string>
+</resources>
