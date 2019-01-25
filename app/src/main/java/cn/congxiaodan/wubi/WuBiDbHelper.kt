@@ -30,7 +30,7 @@ class WuBiDbHelper(context: Context) : SQLiteOpenHelper(
     }
 
     companion object {
-        const val DATABASE_VERSION = 1
+        const val DATABASE_VERSION = 2
         const val DATABASE_NAME = "wubi.db"
     }
 }

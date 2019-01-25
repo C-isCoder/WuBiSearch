@@ -1,33 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="?attr/colorPrimary"
+       android:minHeight="?attr/actionBarSize"
+       app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+       app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+       app:title="@string/app_name" />
+
+   <androidx.appcompat.widget.SearchView
+       android:id="@+id/svSearch"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       android:layout_gravity="center_horizontal"
+       android:visibility="gone"
+       app:closeIcon="@drawable/ic_close"
+       app:commitIcon="@drawable/ic_done"
+       app:goIcon="@drawable/ic_done"
+       app:queryHint="@string/tips_input_text" />
+
    <EditText
        android:id="@+id/etInput"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:layout_marginTop="40dp"
-       android:padding="10dp"
+       android:layout_margin="16dp"
        android:gravity="center"
        android:hint="@string/tips_input_text"
-       android:maxLength="1"
+       android:maxLength="10"
        android:textSize="16sp" />
 
    <Button
        android:id="@+id/btnGo"
        android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="20dp"
+       android:layout_height="40dp"
+       android:layout_margin="16dp"
+       android:background="@drawable/button"
        android:onClick="search"
-       android:text="@string/search" />
+       android:text="@string/search"
+       android:textColor="@android:color/white"
+       android:textSize="16sp" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp">
+
+      <TextView
+          android:textStyle="bold"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="ID"
+          android:textColor="@android:color/black"
+          android:textSize="16sp" />
+
+      <TextView
+          android:textStyle="bold"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="@string/wb_code"
+          android:textColor="@android:color/holo_red_dark"
+          android:textSize="16sp" />
+
+      <TextView
+          android:textStyle="bold"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="@string/han_zi"
+          android:textColor="@android:color/black"
+          android:textSize="16sp" />
+   </LinearLayout>
 
    <ListView
        android:id="@+id/lvList"
        android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="10dp" />
+       android:layout_height="wrap_content" />
 </LinearLayout>

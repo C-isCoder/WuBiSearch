@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:paddingStart="16dp"
-    android:paddingEnd="16dp">
+    android:gravity="center_vertical">
 
    <TextView
        android:id="@+id/tvId"
-       android:layout_width="wrap_content"
+       android:layout_width="0dp"
        android:layout_height="wrap_content"
-       android:layout_centerVertical="true"
+       android:layout_weight="1"
+       android:gravity="center"
        android:textColor="@android:color/darker_gray"
        android:textSize="16sp" />
 
    <TextView
-       android:id="@+id/tvZiGen"
-       android:layout_width="80dp"
+       android:id="@+id/tvCode"
+       android:layout_width="0dp"
        android:layout_height="wrap_content"
-       android:layout_centerInParent="true"
+       android:layout_weight="1"
+       android:gravity="center"
        android:textColor="@android:color/holo_red_dark"
        android:textSize="16sp" />
 
    <TextView
-       android:id="@+id/tvHanZi"
-       android:layout_width="wrap_content"
+       android:id="@+id/tvChinese"
+       android:layout_width="0dp"
        android:layout_height="wrap_content"
-       android:layout_alignParentEnd="true"
-       android:layout_centerVertical="true"
+       android:layout_weight="1"
+       android:gravity="center"
        android:textColor="@android:color/black"
        android:textSize="16sp" />
-</RelativeLayout>
+</LinearLayout>

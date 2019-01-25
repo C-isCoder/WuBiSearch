@@ -1,3 +1,3 @@
 package cn.congxiaodan.wubi
 
-data class WuBiData(val id: String, val hanzi: String, val zigen: String)
+data class WuBiData(val id: Int, val chinese: String, val code: String)

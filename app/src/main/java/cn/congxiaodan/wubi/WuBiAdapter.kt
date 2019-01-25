@@ -23,16 +23,16 @@ class WuBiAdapter : BaseAdapter() {
             holder = Holder()
             view = LayoutInflater.from(parent?.context).inflate(R.layout.item_wubi, parent, false)
             holder.tvId = view.findViewById(R.id.tvId)
-            holder.tvHanZi = view.findViewById(R.id.tvHanZi)
-            holder.tvZiGen = view.findViewById(R.id.tvZiGen)
+            holder.tvChinese = view.findViewById(R.id.tvChinese)
+            holder.tvCode = view.findViewById(R.id.tvCode)
             view.tag = holder
         } else {
             view = convertView
             holder = view.tag as Holder
         }
-        holder.tvId?.text = String.format("ID：%s", data.id)
-        holder.tvHanZi?.text = String.format("汉字：%s", data.hanzi)
-        holder.tvZiGen?.text = String.format("五笔：%s", data.zigen)
+        holder.tvId?.text = data.id.toString()
+        holder.tvChinese?.text = data.chinese
+        holder.tvCode?.text = data.code
         return view
     }
 
@@ -44,7 +44,7 @@ class WuBiAdapter : BaseAdapter() {
 
     class Holder {
         var tvId: TextView? = null
-        var tvHanZi: TextView? = null
-        var tvZiGen: TextView? = null
+        var tvChinese: TextView? = null
+        var tvCode: TextView? = null
     }
 }

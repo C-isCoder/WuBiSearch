@@ -2,4 +2,7 @@
     <string name="app_name">五笔反查</string>
     <string name="tips_input_text">请输入要查询的汉字</string>
     <string name="search">查询</string>
+    <string name="wb_code">五笔编码</string>
+    <string name="han_zi">汉字</string>
+    <string name="db_reset">数据库重置</string>
 </resources>
