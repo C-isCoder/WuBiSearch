@@ -21,5 +21,5 @@
 
 ## 感谢
 
-* 🙏感谢 [wubi_search](https://github.com/qingye5786/wubi_search) 的数据库文件
-* 🙏感谢 [98wubi-tables](https://github.com/yanhuacuo/98wubi-tables) 的数据库文件
+* 感谢 [wubi_search](https://github.com/qingye5786/wubi_search) 的数据库文件
+* 感谢 [98wubi-tables](https://github.com/yanhuacuo/98wubi-tables) 的数据库文件
